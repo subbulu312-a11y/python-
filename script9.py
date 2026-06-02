@@ -1,16 +1,15 @@
-# This is a sample Python script.
-
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+'''class Age:
+    def __init__(self,value):
+        if not isinstance(value,int)or value<0:
+            raise ValueError(f'Invalid age:{value}')
+        self.age=value
+a =Age(25)
+b=Age(-5)'''
+class Student:
+    school='python Academy'
+    def __init__(self,name,age):
+        self.name=name
+        self.age=age
+alice=Student('alice',21)
+print(alice.__dict__)
+print(Student.__dict__)
